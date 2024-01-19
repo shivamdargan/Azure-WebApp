@@ -5,7 +5,6 @@ var cookieParser = require('cookie-parser');
 
 var app = express();
 
-app.set('port', process.env.PORT || 5000);
 console.log("Server Running On" + app.get('port'));
 
 app.use(express.json());
@@ -25,15 +24,7 @@ app.use(function (req, res, next) {
     next(createError(404));
 });
 
-// error handler
-app.use(function (err, req, res, next) {
-    // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-    res.status(err.status || 500);
-    res.render('error');
-});
 
 module.exports = app;
 
