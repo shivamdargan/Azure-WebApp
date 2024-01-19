@@ -15,7 +15,7 @@ function App() {
         credentials: 'include'
       };
     
-      fetch('/api/getRoute',requestCredentials)
+      fetch('/api/getTask2',requestCredentials)
       .then(async response => {
           if(response.ok){
               
@@ -34,7 +34,8 @@ function App() {
 
   return (
     <div className="App">
-        {name != null ?  name.data : null }
+      {/* {console.log( name.dta.recordset[0])}; */}
+        {name != null ?  name.recordset[0].CompanyName : null }
     </div>
   );
 }
