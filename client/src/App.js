@@ -1,42 +1,21 @@
-import { useEffect, useState } from "react";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Task1 from "./pages/task1";
+import Task2 from "./pages/task2";
+import Task3 from "./pages/task3";
 function App() {
-
-  const [name,setName] = useState();
-  
-    useEffect(() => {
-      const requestCredentials = {
-        method:"GET",
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-          'Cache': 'no-cache'
-        },
-        credentials: 'include'
-      };
-    
-      fetch('/api/getTask2',requestCredentials)
-      .then(async response => {
-          if(response.ok){
-              
-              response.json().then(data => {
-                console.log(data);
-                setName(data)
-              });
-           }
-          else{
-              throw response.json();
-          }
-        })
-    
-    },[])
 
 
   return (
-    <div className="App">
-      {/* {console.log( name.dta.recordset[0])}; */}
-        {name != null ?  name.recordset[0].CompanyName : null }
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Task1/>}>
+      </Route>
+      <Route path="/task2" element={<Task2/>}>
+      </Route>
+      <Route path="/task3" element={<Task3/>}>
+      </Route>
+    </Routes>
+  </BrowserRouter>
   );
 }
 
