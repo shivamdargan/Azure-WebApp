@@ -35,7 +35,7 @@ const Task1 = () => {
                         <b>I Am</b> Value Time Greatly And Thus, Meeting Deadlines While Still Producing Quality Work Is Something That Comes Natural To Me.</p>
                         <br></br>
                         <br></br>
-                        I Enjoy Watching Motorsports, Particularly Formula 1, So If You Ever Want To Discuss F1 Hit Me Up !<br/>
+                        I Enjoy Watching Motorsports, Particularly Formula 1, So If You Ever Want To Discuss F1 Hit Me Up!<br/>
                         I Am A Fitness Enthusiast And Enjoy Training Heavy And Pushing My Limits.<br/>
                         I Am A Big Tech Geek, Always Looking Forward To Get Hands On The Lastest Gadgets That Release<br/>
                         To Know More About Me, Click <a href = "https://shivamdargan.netlify.app/" style={{textDecoration:"none","color":"red"}}>Here</a>
