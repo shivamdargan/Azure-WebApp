@@ -30,7 +30,7 @@ const Task3 = () => {
             credentials: 'include'
           };
         
-          fetch('http://localhost:5000/api/getTask3',requestCredentials)
+          fetch('/api/getTask3',requestCredentials)
           .then(async response   => {
               if(response.ok){
                   

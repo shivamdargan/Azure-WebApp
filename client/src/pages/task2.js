@@ -34,7 +34,7 @@ const Task2 = () => {
             credentials: 'include'
           };
         
-          fetch('http://localhost:5000/api/getTask2',requestCredentials)
+          fetch('/api/getTask2',requestCredentials)
           .then(async response   => {
               if(response.ok){
                   
